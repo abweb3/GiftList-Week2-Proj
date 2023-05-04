@@ -1,3 +1,5 @@
+import { Buffer } from 'buffer';
+
 const { keccak256 } = require('ethereum-cryptography/keccak');
 const { bytesToHex } = require('ethereum-cryptography/utils');
 
@@ -67,4 +69,4 @@ class MerkleTree {
   }
 }
 
-module.exports = MerkleTree;
+export default MerkleTree;

@@ -30,3 +30,6 @@ app.post('/gift', (req, res) => {
 app.listen(port, () => {
   console.log(`Listening on port ${port}!`);
 });
+
+const cors = require('cors');
+app.use(cors());
